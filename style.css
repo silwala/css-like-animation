@@ -10,15 +10,19 @@ body{
     align-items: center;
 }
 
-.like:active{
-    animation: 1s like-clicked forwards;
+.like{
+    filter: none;
+}
+
+.clicked{
+    animation: .5s like-clicked forwards;
 }
 
 @keyframes like-clicked{
     10%{
         filter: invert(30%) sepia(71%) saturate(2000%) hue-rotate(208deg) brightness(100%) contrast(90%);
     }
-    35%, 50%{
+    35%, 60%{
         transform: scale(1.25) rotate(-15deg);
     }
     
