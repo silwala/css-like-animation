@@ -1,0 +1,27 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like:active{
+    animation: 1s like-clicked forwards;
+}
+
+@keyframes like-clicked{
+
+    35%, 50%{
+        transform: scale(1.25) rotate(-15deg);
+        filter: invert(94%) sepia(92%) saturate(7085%) hue-rotate(170deg) brightness(99%) contrast(91%);
+    }
+    
+    100%{
+        filter: invert(30%) sepia(71%) saturate(3519%) hue-rotate(208deg) brightness(104%) contrast(90%);
+    }
+}
