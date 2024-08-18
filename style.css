@@ -15,13 +15,18 @@ body{
 }
 
 @keyframes like-clicked{
-
+    10%{
+        filter: invert(30%) sepia(71%) saturate(2000%) hue-rotate(208deg) brightness(100%) contrast(90%);
+    }
     35%, 50%{
         transform: scale(1.25) rotate(-15deg);
-        filter: invert(94%) sepia(92%) saturate(7085%) hue-rotate(170deg) brightness(99%) contrast(91%);
     }
     
-    100%{
-        filter: invert(30%) sepia(71%) saturate(3519%) hue-rotate(208deg) brightness(104%) contrast(90%);
+    50%{
+        filter: invert(30%) sepia(71%) saturate(2000%) hue-rotate(208deg) brightness(200%) contrast(90%);
     }
+    100%{
+        filter: invert(30%) sepia(71%) saturate(2000%) hue-rotate(208deg) brightness(100%) contrast(90%);
+    }
+    
 }
